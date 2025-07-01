@@ -22,9 +22,9 @@
     <!-- Header Section -->
     <header id="head">
       <div class="container-fluid fixed-top bg-light">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg py-1">
           <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="index.html"
+            <a class="navbar-brand" href="index.html"
               ><img src="pictures/logo-cos.png" class="img-fluid" alt=""
             /></a>
             <button
@@ -39,12 +39,12 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mx-auto gap-2 mb-2 mb-lg-0">
                 <li class="nav-item">
                   <a class="nav-link" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="about.html">Présentation</a>
+                  <a class="nav-link active" href="about.html">Présentation</a>
                 </li>
                 <li class="nav-item dropdown">
                   <a
@@ -88,9 +88,9 @@
                 </li>
               </ul>
               <form class="d-flex">
-                <button class="btn-nav text-white border-0 me-4" type="submit">
+                <div class="btn-nav text-white border-0 rounded-pill px-3" type="submit">
                   Nous rejoindre
-                </button>
+                </div>
               </form>
             </div>
           </div>
@@ -101,26 +101,26 @@
       <div class="container-fluid">
         <div class="row bg-csf py-5">
           <div class="col-md-6 mx-auto pt-5">
-            <h1 class="text-center text-white pt-3">À propos</h1>
-            <p class="text-white">
-              Odio et unde deleniti. Deserunt numquam exercitationem. Officiis
-              quo odio sint voluptas consequatur ut a odio voluptatem.
+            <h3 class="text-center text-white pt-3">Présentation</h3>
+            <p class="text-center text-white">
+              COSEFOR propose une formation professionnelle axée sur les besoins du marché, favorisant insertion,
+               expertise, innovation et entrepreneuriat durable.
             </p>
           </div>
         </div>
         <div class="row bg-csf1 p-3">
           <div class="col-md-6">
-            <a href="index.html" class="link-ap text-white">Accueil</a>
-            <span class="contact link-ap1 text-white"> / À propos</span>
+            <a href="index.html" class="link-ap text-white">Cosefor</a>
+            <span class="contact link-ap1 text-white"> / Présentation</span>
           </div>
         </div>
 
         <section>
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-md-6">
+            <div class="row align-items-center">
+              <div class="col-md-8">
                 <div class="p-5">
-                  <h2>Présentation</h2>
+                  <h3>Présentation</h3>
                   <p class="pt-4">
                     Le Collectif Sénégalais pour la formation Professionnelle
                     (COSEFOR) est un établissement privé d’enseignement
@@ -150,9 +150,10 @@
                   </p>
                 </div>
               </div>
-              <div class="col-md-6">
-                <div class="p-5">
-                  <img src="pictures/about001.jpg" class="img-fluid" alt="" />
+              <div class="col-md-4">
+                <div class="p-5 d-flex justify-content-center">
+                  <i class="fa-solid fa-person-chalkboard" style="font-size: 15rem; color: #152BAD; transform: scaleX(-1);"></i>
+                  <!-- <img src="pictures/about001.jpg" class="img-fluid" alt="" /> -->
                 </div>
               </div>
             </div>
@@ -161,15 +162,14 @@
         <section id="missions">
           <div class="container">
             <div class="text-center pt-5">
-              <h1 class="title">Nos Missions et objectifs</h1>
+              <h3 class="title text-center position-relative unTitre">Missions et Objectifs</h3>
               <p class="pt-3">
-                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-                consectetur velit
+                Une formation professionnelle adaptée, centrée sur l’employabilité et les standards internationaux.
               </p>
             </div>
-            <div class="row py-3">
+            <div class="row py-3 mb-5 mt-4">
               <div class="col-md-8">
-                <h2>Nos missions</h2>
+                <h4 style="color: #152BAD;">Nos missions</h4>
                 <p>
                   La mission de COSEFOR est d’assurer la formation initiale de
                   qualité, mais aussi la formation modulaire de spécialités en
@@ -201,13 +201,18 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-4">
-                <img src="pictures/mission.jpg" class="img-fluid" alt="" />
+              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-chart-simple" style="font-size: 15rem; color: #152BAD;"></i>
+                <!-- <img src="pictures/mission.jpg" class="img-fluid" alt="" /> -->
               </div>
             </div>
             <div class="row py-3">
+              <div class="col-md-4 d-flex justify-content-center align-items-center">
+                <i class="fa-solid fa-bullseye" style="font-size: 15rem; color: #152BAD;"></i>
+                <!-- <img src="pictures/obj.jpg" class="img-fluid" alt="" /> -->
+              </div>
               <div class="col-md-8">
-                <h2>Nos objectifs</h2>
+                <h4 style="color: #152BAD;">Nos objectifs</h4>
                 <p>
                   L’objectif général de COSEFOR est d’être leader dans la
                   formation des sages-femmes et infirmiers d’Etat de qualité sur
@@ -236,9 +241,6 @@
                   </li>
                 </ul>
               </div>
-              <div class="col-md-4">
-                <img src="pictures/obj.jpg" class="img-fluid" alt="" />
-              </div>
             </div>
           </div>
         </section>
@@ -246,10 +248,9 @@
         <section id="team">
           <div class="container">
             <div class="text-center pt-5">
-              <h1 class="title">Notre equipe</h1>
+              <h3 class="title text-center position-relative unTitre">Notre equipe</h3>
               <p class="pt-3">
-                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-                consectetur velit
+                Une équipe dynamique, engagée, experte et dédiée à votre réussite.
               </p>
             </div>
           </div>
@@ -257,22 +258,22 @@
             <div class="container">
               <div class="row d-md-flex justify-content-center">
                 <div class="col-lg-3 col-md-4 p-1">
-                  <div class="card" style="width: 15rem">
+                  <div class="card equipe-card" style="width: 15rem">
                     <div class="team-img rounded-3">
                       <img
                         src="pictures/team/team-1.jpg"
                         alt=""
-                        class="img-fluid"
+                        class="img-fluid rounded"
                       />
                     </div>
                     <div class="team-title">
-                      <h3>Walter WHITE</h3>
+                      <h5>Walter WHITE</h5>
                       <span class="team-job">Web development</span>
                       <span
                         class="sm-icon d-flex align-items-center text-center gap-2"
                       >
                         <div
-                          class="social-media d-flex align-items-center gap-2"
+                          class="social-media d-flex align-items-center gap-3"
                         >
                           <div class="sm-item">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -292,20 +293,20 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-4 p-1">
-                  <div class="card" style="width: 15rem">
+                  <div class="card equipe-card" style="width: 15rem">
                     <div class="team-img">
                       <img
                         src="pictures/team/team-2.jpg"
                         alt=""
-                        class="img-fluid"
+                        class="img-fluid rounded"
                       />
                     </div>
                     <div class="team-title">
-                      <h3>Sarah JHINSON</h3>
+                      <h5>Sarah JHINSON</h5>
                       <span class="team-job">Marketing</span>
                       <span class="sm-icon d-flex align-items-center gap-2">
                         <div
-                          class="social-media d-flex align-items-center gap-2"
+                          class="social-media d-flex align-items-center gap-3"
                         >
                           <div class="sm-item">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -325,20 +326,20 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-4 p-1">
-                  <div class="card" style="width: 15rem">
+                  <div class="card equipe-card" style="width: 15rem">
                     <div class="team-img">
                       <img
                         src="pictures/team/team-3.jpg"
                         alt=""
-                        class="img-fluid"
+                        class="img-fluid rounded"
                       />
                     </div>
                     <div class="team-title">
-                      <h3>Wiliam ANDERSON</h3>
+                      <h5>Wiliam ANDERSON</h5>
                       <span class="team-job">Content</span>
                       <span class="sm-icon d-flex align-items-center gap-2">
                         <div
-                          class="social-media d-flex align-items-center gap-2"
+                          class="social-media d-flex align-items-center gap-3"
                         >
                           <div class="sm-item">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -358,20 +359,20 @@
                   </div>
                 </div>
                 <div class="col-lg-3 col-md-4 p-1">
-                  <div class="card" style="width: 15rem">
+                  <div class="card equipe-card" style="width: 15rem">
                     <div class="team-img">
                       <img
                         src="pictures/team/team-4.jpg"
                         alt=""
-                        class="img-fluid"
+                        class="img-fluid rounded"
                       />
                     </div>
                     <div class="team-title">
-                      <h3>Amada JEPSON</h3>
+                      <h5>Amada JEPSON</h5>
                       <span class="team-job">Accountant</span>
                       <span class="sm-icon d-flex align-items-center gap-2">
                         <div
-                          class="social-media d-flex align-items-center gap-2"
+                          class="social-media d-flex align-items-center gap-3"
                         >
                           <div class="sm-item">
                             <a href="#"><i class="fab fa-linkedin"></i></a>
@@ -397,15 +398,14 @@
         <section id="partners">
           <div class="container-fluid">
             <div class="text-center pt-5">
-              <h1 class="title">Nos partenariats</h1>
+              <h3 class="title text-center position-relative unTitre">Nos partenariats</h3>
               <p class="pt-3">
-                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-                consectetur velit
+                Partenaires engagés pour l'excellence, l'innovation et la réussite professionnelle.
               </p>
             </div>
-            <div class="row bg-light py-4">
-              <div class="col-md-3 p-4">
-                <div class="partner-item p-3 bg-white">
+            <div class="row justify-content-center gap-3 bg-light py-5">
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
                   <img
                     src="pictures/partner-3FPT.png"
                     class="img-fluid"
@@ -413,8 +413,8 @@
                   />
                 </div>
               </div>
-              <div class="col-md-3 p-4">
-                <div class="partner-item p-3 bg-white">
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
                   <img
                     src="pictures/partner-MESRI.jpg"
                     class="img-fluid"
@@ -422,13 +422,49 @@
                   />
                 </div>
               </div>
-              <div class="col-md-3 p-4">
-                <div class="partner-item p-3 bg-white">
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
                   <img src="pictures/MSAS.jpg" class="img-fluid" alt="" />
                 </div>
               </div>
-              <div class="col-md-3 p-4">
-                <div class="partner-item p-3 bg-white">
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
+                  <img
+                    src="pictures/Partner-MFAP.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
+                  <img
+                    src="pictures/Partner-MFAP.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
+                  <img
+                    src="pictures/Partner-MFAP.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
+                  <img
+                    src="pictures/Partner-MFAP.jpg"
+                    class="img-fluid"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="col-md-1 d-flex justify-content-center p-1">
+                <div class="partner-item p-1 shadow">
                   <img
                     src="pictures/Partner-MFAP.jpg"
                     class="img-fluid"
@@ -440,32 +476,31 @@
           </div>
         </section>
         <section id="gallery">
-          <div class="container-fluid">
+          <div class="container-fluid container-md">
             <div class="text-center pt-5">
-              <h1 class="title">Gallerie</h1>
+              <h3 class="title text-center position-relative unTitre">Galerie</h3>
               <p class="pt-3">
-                Necessitatibus eius consequatur ex aliquid fuga eum quidem sint
-                consectetur velit
+                Découvrez COSEFOR à travers des images de son cadre, son équipe et ses activités.
               </p>
             </div>
             <div
-              class="row border d-flex justify-content-center align-items-center p-5"
+              class="row d-flex justify-content-center align-items-center gap-3"
             >
               <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
+                class="col-md-3 d-flex justify-content-center align-items-center"
               >
-                <div class="gallery-item">
+                <div class="gallery-item p-1 border rounded shadow">
                   <img
                     src="pictures/gallery/venue-gallery-1.jpg"
-                    class="img-fluid"
+                    class="img-fluid rounded"
                     alt=""
                   />
                 </div>
               </div>
               <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
+                class="col-md-3 d-flex justify-content-center align-items-center"
               >
-                <div class="gallery-item">
+                <div class="gallery-item p-1 border rounded shadow">
                   <img
                     src="pictures/gallery/venue-gallery-2.jpg"
                     class="img-fluid"
@@ -474,9 +509,9 @@
                 </div>
               </div>
               <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
+                class="col-md-3 d-flex justify-content-center align-items-center"
               >
-                <div class="gallery-item">
+                <div class="gallery-item p-1 border rounded shadow">
                   <img
                     src="pictures/gallery/venue-gallery-3.jpg"
                     class="img-fluid"
@@ -485,9 +520,9 @@
                 </div>
               </div>
               <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
+                class="col-md-3 d-flex justify-content-center align-items-center"
               >
-                <div class="gallery-item">
+                <div class="gallery-item p-1 border rounded shadow">
                   <img
                     src="pictures/gallery/venue-gallery-4.jpg"
                     class="img-fluid"
@@ -496,9 +531,9 @@
                 </div>
               </div>
               <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
+                class="col-md-3 d-flex justify-content-center align-items-center"
               >
-                <div class="gallery-item">
+                <div class="gallery-item p-1 border rounded shadow">
                   <img
                     src="pictures/gallery/venue-gallery-5.jpg"
                     class="img-fluid"
@@ -507,9 +542,9 @@
                 </div>
               </div>
               <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
+                class="col-md-3 d-flex justify-content-center align-items-center"
               >
-                <div class="gallery-item">
+                <div class="gallery-item p-1 border rounded shadow">
                   <img
                     src="pictures/gallery/venue-gallery-6.jpg"
                     class="img-fluid"
@@ -517,39 +552,9 @@
                   />
                 </div>
               </div>
-              <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
-              >
-                <div class="gallery-item">
-                  <img
-                    src="pictures/gallery/venue-gallery-7.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
-              >
-                <div class="gallery-item">
-                  <img
-                    src="pictures/gallery/venue-gallery-8.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
-              <div
-                class="col-md-4 border d-flex justify-content-center align-items-center"
-              >
-                <div class="gallery-item">
-                  <img
-                    src="pictures/gallery/venue-gallery-9.jpg"
-                    class="img-fluid"
-                    alt=""
-                  />
-                </div>
-              </div>
+            </div>
+            <div style="display: flex; justify-content: center;" class="my-4">
+              <a href="#" class="btn rounded-pill" style="background-color: #152BAD; color: white; width: max-content;">Découvrir plus</a>
             </div>
           </div>
         </section>

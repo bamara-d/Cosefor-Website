@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  /* outline: 1px solid red; */
 }
 /* ALL */
 .bg-csf{
@@ -16,19 +17,89 @@ body{
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 /* ----------- Section Header ----------- */
 .navbar-brand{
-  width: 70px;
-  height: 70px;
+  width: 65px;
+  /* height: 70px; */
 }
+
 .btn-nav{
   padding: 9px 35px;
   background-color: #152BAD;
 }
 .btn-nav:hover{
   background-color: #155fad;
+}
+
+.nav-item{
+  position: relative;
+}
+
+.nav-item .active{
+  color: #152BAD !important;
+  font-weight: 700;
+  transition: all .3s ease-in-out;
+}
+
+.nav-item .active::before{
+  content: '';
+  position: absolute;
+  bottom: 2px;
+  left: 50%;
+  transform: translatex(-50%);
+  width: 35px;
+  height: 2px;
+  z-index: 1000;
+  background-color: #152BAD;
+}
+
+.dropdown-item.drop-active{
+  background-color: #152BAD !important;
+  color: white !important;
+  cursor: pointer;
+}
+
+.dropdown-item:hover{
+  /* background-color: #155fad !important;
+  color: white !important; */
+  box-shadow: 0 0 5px #152cad8e;
+  color: #152BAD !important;
+}
+
+.dropdown-item:hover.drop-active{
+  color: #152BAD !important;
+  background-color: white !important;
+}
+
+.dropdown-item:focus{
+  background-color: #152BAD !important;
+  color: white !important;
+}
+
+/* ----------- L'image qui occupe toute la zone ----------- */
+
+#home .container-fluid{
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+
+}
+
+/* ----------- les formations ----------- */
+
+.unTitre::before{
+  content: '';
+  position: absolute;
+  bottom: -15px;
+  width: 100px;
+  height: 2px;
+  background-color: #152BAD;
+  opacity: 0.2;
+  left: 50%;
+  transform: translateX(-50%);
 }
 
 /* ----------- Section Temoignages ----------- */
@@ -50,32 +121,137 @@ body{
 .temoignages .info{
   width: 500px;
   height: auto;
-  padding-left: 10px;
+  padding-left: 15px;
   border-left: 3px solid #ce1212;
   margin-bottom: 70px;
 }
 .temoignages .stars i{
-  color: #ffc107;
+  color: #f9c117;
+  font-size: 13px;
 }
 
 /* ----------- Home Page ----------- */
 #hero .hero-bg{
   width: 100%;
-  height: 99vh;
-}
-#hero .hero-bg{
-  background-image: url(pictures/hero-bg.jpg);
+  height: 100vh;
+  background-image: url(pictures/bg\ pictures.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
+  overflow: hidden;
+  position: relative;
+  z-index: 1;
 }
+
+.hero-bg::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  background: linear-gradient(to right, rgba(21, 43, 173, 0.8), rgba(255, 255, 255, 0.1));
+}
+/* #hero .hero-bg{
+
+  width: 100%;
+} */
 #hero .hero-text{
   width: 70%;
+  position: relative;
+  top: -35px;
   margin: 270px auto 0;
+  z-index: 3;
   color: #ffffff;
 }
+
+/* .hero-text h1{
+  letter-spacing: 3px;
+  font-size: 4.5rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+} */
+
+.hero-text h1 {
+  letter-spacing: 3px;
+  font-size: 4.5rem;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.7);
+  position: relative;
+  animation: slideAcross 30s linear infinite;
+}
+
+.hero-text h2{
+  font-size: 1.4rem;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.9);
+}
+
+#info h2{
+  color: #152BAD;
+  position: relative;
+}
+
+#info h2::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  bottom: -10px;
+  left: 0;
+  background-color: #D0071A;
+}
+
+/* Animation */
+
+@keyframes slideAcross {
+  0% {
+    transform: translateX(-100%);
+    letter-spacing: 3px;
+    opacity: 0;
+  }
+
+  5%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  20% {
+    transform: translateX(0);
+    letter-spacing: 3px;
+  }
+
+  40% {
+    transform: translateX(0);
+    letter-spacing: 10px; /* espacement max */
+    opacity: 1;
+  }
+
+  60% {
+    transform: translateX(0);
+    letter-spacing: 3px; /* retour à la normale */
+    opacity: 1;
+  }
+
+  80% {
+    transform: translateX(0);
+    letter-spacing: 3px;
+  }
+
+  95%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+
+  100% {
+    transform: translateX(100%);
+    letter-spacing: 3px;
+    opacity: 0;
+  }
+}
+
 .btn-hero{
   padding: 15px 35px;
-  background-color: transparent;
+  background-color: #152BAD;
+  color: white;
   border: 1px solid white;
   color: #ffffff;
   margin-top: 20px;
@@ -90,6 +266,80 @@ body{
   color: #152BAD;
 }
 
+
+/* ------------- texte cosefor et les icones */
+
+#info .pararaphe-texte{
+  font-size: 20px;
+}
+
+#stats i{
+  font-size: 40px;
+  margin-bottom: 10px;
+  color: #152BAD;
+}
+
+#stats span{
+  color: #152BAD;
+}
+
+
+
+/* ----------- Card ----------- */
+
+.card, .fcard{
+  border: 1px solid #152cad27 !important;
+  cursor: context-menu;
+}
+
+.fcard {
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 7px;
+  transition: all .3s ease-in-out;
+}
+
+.fcard:hover{
+  /* padding: 5px; */
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.card img{
+  position: relative;
+  z-index: 1;
+}
+
+.card img::before{
+  content: '';
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.2;
+  z-index: 2;
+}
+
+.card .card-title{
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.card .card-text{
+  font-size: 14px !important;
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.card-body .btn{
+  background-color: #152BAD !important;
+  border: none;
+  padding: 5px 10px !important;
+  font-size: 15px;
+}
+
 /* ----------- About Page ----------- */
 #about .link-ap{
   text-decoration: none;
@@ -100,6 +350,20 @@ body{
   /* font-weight: bold; */
 }
 /* Team */
+.equipe-card{
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+  transition: all .3s ease-in-out;
+}
+
+.equipe-card:hover{
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.team-job{
+  font-size: 14px;
+  opacity: 0.8;
+}
+
 .team-img{
   width: 220px;
   height: 200px;
@@ -115,9 +379,10 @@ body{
   align-items: center;
   margin: 15px 0;
 }
-.team-title h3{
-  font-size: 21px;
-  font-weight: 700;
+.team-title h5{
+  font-size: 16px;
+  /* letter-spacing: 2px; */
+  font-weight: 500;
 }
 
 .sm-icon{
@@ -127,8 +392,8 @@ body{
   text-decoration: none;
 }
 .sm-item a i{
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   border-radius: 100%;
   display: flex;
   justify-content: center;
@@ -143,27 +408,38 @@ body{
   color: #152BAD;
 }
 .partner-item{
-  width: 200px;
-  height: 200px;
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
+  position: relative;
+  /* background-color: #152cad23; */
+  border: 1px solid #152cad23;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
 }
 .partner-item img{
+  /* position: absolute; */
   width: 100%;
   height: 100%;
+  object-fit: cover;
+  top: 0;
+  left: 0;
+  border-radius: 10px;
 }
 
 .gallery-item{
-  width: 350px;
-  height: 350px;
+  /* width: 350px;
+  height: 210px; */
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #000;
+  /* background-color: #152BAD; */
+  /* border: 1px solid #000; */
 }
-.gallery-item {
+/* .gallery-item {
   position: relative;
   display: inline-block;
   overflow: hidden;
-}
+} */
 .gallery-item img {
   display: block;
   width: 100%;

@@ -22,9 +22,9 @@
     <!-- Header Section -->
     <header id="head">
       <div class="container-fluid fixed-top bg-light">
-        <nav class="navbar navbar-expand-lg">
+        <nav class="navbar navbar-expand-lg py-1">
           <div class="container-fluid">
-            <a class="navbar-brand ms-4" href="index.html"
+            <a class="navbar-brand" href="index.html"
               ><img src="pictures/logo-cos.png" class="img-fluid" alt=""
             /></a>
             <button
@@ -39,9 +39,9 @@
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <ul class="navbar-nav mx-auto gap-2 mb-2 mb-lg-0">
                 <li class="nav-item">
-                  <a class="nav-link" href="index.html">Accueil</a>
+                  <a class="nav-link active" href="index.html">Accueil</a>
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="about.html">Présentation</a>
@@ -88,9 +88,9 @@
                 </li>
               </ul>
               <form class="d-flex">
-                <button class="btn-nav text-white border-0 me-4" type="submit">
+                <div class="btn-nav text-white border-0 rounded-pill px-3" type="submit">
                   Nous rejoindre
-                </button>
+                </div>
               </form>
             </div>
           </div>
@@ -99,30 +99,30 @@
     </header>
     <main id="home">
       <div class="container-fluid">
-        <section id="hero">
+        <section id="hero" class="mb-5">
           <div class="container-fluid">
-            <div class="row">
-              <div class="col-lg-12 p-0 hero-bg">
+            <div class="row gx-0">
+              <div class="col-lg-12 hero-bg">
                 <div
                   class="hero-text d-flex flex-column justify-content-center align-items-center"
                 >
-                  <h1>COSEFOR</h1>
+                  <h1 class="mb-4 fw-bold">COSEFOR</h1>
                   <h2>
                     Collectif Sénégalais pour la Formation Professionnelle
                   </h2>
-                  <button class="btn-hero">Découvrez nos formations</button>
+                  <button class="btn-hero rounded-pill px-4 py-3 mt-5">Découvrez nos formations</button>
                 </div>
               </div>
             </div>
           </div>
         </section>
-        <section id="info" class="pt-5">
-          <div class="container-fluid">
+        <section id="info" class="pt-5 mb-5">
+          <div class="container">
             <div class="row">
               <div class="col-md-6">
-                <div class="p-5">
+                <div class="p-1">
                   <h2>COSEFOR</h2>
-                  <p>
+                  <p class="mt-4 pararaphe-texte">
                     Le Collectif Sénégalais pour la formation Professionnelle
                     (COSEFOR) est un établissement privé d’enseignement
                     professionnel avec comme vocation, à l’origine, d’intervenir
@@ -141,47 +141,51 @@
                 </div>
               </div>
               <div class="col-md-6">
-                <div class="p-5 border">
-                  <img src="pictures/cos-logo.jpg" class="img-fluid" alt="" />
+                <div class="py-5 px-2 rounded-1 shadow d-flex justify-content-center align-items-center">
+                  <img src="pictures/cosefor.jpg" class="img-fluid" alt="" style="width: 20rem;" />
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        <section id="stats" class="pt-5">
+        <section id="stats" class="pt-5 mb-3">
           <div class="container-fluid">
             <div class="row bg-light p-4">
-              <div class="col-lg-3 col-md-4 p-4">
+              <div class="col-lg-3 col-md-4 p-3">
                 <div
-                  class="d-flex flex-column border border shadow justify-content-center align-items-center py-5"
+                  class="d-flex flex-column border rounded shadow justify-content-center align-items-center py-5"
                 >
-                  <p>31 ans</p>
-                  <span>D'existences</span>
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <p class="fw-bold fs-4 my-0">31<span class="fs-6 fw-light">ans</span></p>
+                  <span class="fw-light fs-6">d'existences</span>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 p-4">
+              <div class="col-lg-3 col-md-4 p-3">
                 <div
-                  class="d-flex flex-column border border shadow justify-content-center align-items-center py-5"
+                  class="d-flex flex-column border rounded shadow justify-content-center align-items-center py-5"
                 >
-                  <p>+35000</p>
-                  <span>Etudiants formés</span>
+                  <i class="fa-solid fa-user-graduate"></i>
+                  <p class="fw-bold fs-4 my-0">+35000</p>
+                  <span class="fw-light fs-6">Etudiants formés</span>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 p-4">
+              <div class="col-lg-3 col-md-4 p-3">
                 <div
-                  class="d-flex flex-column border border shadow justify-content-center align-items-center py-5"
+                  class="d-flex flex-column border rounded shadow justify-content-center align-items-center py-5"
                 >
-                  <p>25</p>
-                  <span>Filières</span>
+                  <i class="fa-solid fa-file"></i>
+                  <p class="fw-bold fs-4 my-0">25</p>
+                  <span class="fw-light fs-6">Filières</span>
                 </div>
               </div>
-              <div class="col-lg-3 col-md-4 p-4">
+              <div class="col-lg-3 col-md-4 p-3">
                 <div
-                  class="d-flex flex-column border border shadow justify-content-center align-items-center py-5"
+                  class="d-flex flex-column border rounded shadow justify-content-center align-items-center py-5"
                 >
-                  <p>24</p>
-                  <span>Trainers</span>
+                  <i class="fa-solid fa-marker"></i>
+                  <p class="fw-bold fs-4 my-0">24</p>
+                  <span class="fw-light fs-6">Trainers</span>
                 </div>
               </div>
             </div>
@@ -189,64 +193,68 @@
         </section>
 
         <section class="pt-5">
-          <div class="container-fluid">
-            <div class="row p-5">
-              <h2 class="mb-3">Nos formations les plus demandées</h2>
-              <div class="col-md-4 mb-4 mb-lg-0">
-                <div class="card">
-                  <img
-                    src="pictures/course-1.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">Formation en Commerce & gestion</h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed iaculis, mauris ac auctor convallis, nisi velit semper
-                      lectus, ac efficitur sem ligula id urna.
-                    </p>
-                    <a href="#" class="btn btn-primary">En savoir plus</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-4 mb-4 mb-lg-0">
-                <div class="card">
-                  <img
-                    src="pictures/course-2.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Formation en Sciences paramédicales
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed iaculis, mauris ac auctor convallis, nisi velit semper
-                      lectus, ac efficitur sem ligula id urna.
-                    </p>
-                    <a href="#" class="btn btn-primary">En savoir plus</a>
+          <div class="container-fluid container-md">
+            <h3 class="mb-5 text-center position-relative unTitre">Nos formations les plus demandées</h3>
+            <div class="row">
+              <div class="col-md-4">
+                <div class="rounded fcard">
+                  <div class="card">
+                    <img
+                      src="pictures/commerce-1.jpg"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">Formation en Commerce & gestion</h6>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed iaculis, mauris ac auctor convallis, nisi velit semper
+                        lectus, ac efficitur sem ligula id urna. Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Deserunt excepturi nesciunt saepe
+                      </p>
+                      <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
                   </div>
                 </div>
               </div>
               <div class="col-md-4">
-                <div class="card">
-                  <img
-                    src="pictures/course-3.jpg"
-                    class="card-img-top"
-                    alt="..."
-                  />
-                  <div class="card-body">
-                    <h5 class="card-title">
-                      Formation en Sciences et technologies
-                    </h5>
-                    <p class="card-text">
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Sed iaculis, mauris ac auctor convallis, nisi velit semper
-                      lectus, ac efficitur sem ligula id urna.
-                    </p>
-                    <a href="#" class="btn btn-primary">En savoir plus</a>
+                <div class="rounded fcard">
+                  <div class="card">
+                    <img
+                      src="pictures/science-1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">Formation en Sciences et technologies</h6>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed iaculis, mauris ac auctor convallis, nisi velit semper
+                        lectus, ac efficitur sem ligula id urna. Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Deserunt excepturi nesciunt saepe
+                      </p>
+                      <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="rounded fcard">
+                  <div class="card">
+                    <img
+                      src="pictures/sante-1.jpg"
+                      class="card-img-top"
+                      alt="..."
+                    />
+                    <div class="card-body">
+                      <h6 class="card-title">Formation en Sciences paramédicales</h6>
+                      <p class="card-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed iaculis, mauris ac auctor convallis, nisi velit semper
+                        lectus, ac efficitur sem ligula id urna. Lorem ipsum, dolor sit amet
+                        consectetur adipisicing elit. Deserunt excepturi nesciunt saepe
+                      </p>
+                      <a href="#" class="btn btn-primary">Voir plus</a>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -257,7 +265,7 @@
         <section class="pt-5">
           <div class="container-fluid">
             <div class="row temoignages py-5 px-2">
-              <h1 class="text-center mb-5">Témoignages</h1>
+            <h3 class="mb-5 text-center position-relative unTitre">Témoignages</h3>
               <div
                 id="carouselExampleAutoplaying"
                 class="carousel slide"
@@ -279,7 +287,7 @@
                         </p>
                         <h5>Gagnesiry DIAKITE</h5>
                         <h6>Sécretaire medical</h6>
-                        <div class="stars d-flex">
+                        <div class="stars d-flex gap-2">
                           <i class="fa-regular fa-star"></i>
                           <i class="fa-regular fa-star"></i>
                           <i class="fa-regular fa-star"></i>
@@ -307,7 +315,7 @@
                         </p>
                         <h5>Malang SAMBOU</h5>
                         <h6>Agent transit</h6>
-                        <div class="stars d-flex">
+                        <div class="stars d-flex gap-2">
                           <i class="fa-regular fa-star"></i>
                           <i class="fa-regular fa-star"></i>
                           <i class="fa-regular fa-star"></i>
@@ -335,7 +343,7 @@
                         </p>
                         <h5>Awa KEBE</h5>
                         <h6>Infirmière d'Etat</h6>
-                        <div class="stars d-flex">
+                        <div class="stars d-flex gap-2">
                           <i class="fa-regular fa-star"></i>
                           <i class="fa-regular fa-star"></i>
                           <i class="fa-regular fa-star"></i>
